@@ -1,16 +1,18 @@
 import React from "react";
 
 const liStyle = {
-  width: "60%"
+  width: "50%",
+  margin: "5px"
 };
 
 const divStyle = {
   display: "flex",
-  alignItems: "center"
+  alignItems: "center",
+  justifyContent: "center"
 };
 
 const buttonStyle = {
-  padding: "10px",
+  padding: "5px",
   margin: "5px",
   fontSize: "14px",
   backgroundColor: "rgb(139, 163, 199)",
@@ -29,7 +31,7 @@ class TodoItems extends React.Component {
           style={buttonStyle}
           onClick={() => this.props.deleteItem(item.key)}
         >
-          Remove
+          X
         </button>
       </div>
     );
